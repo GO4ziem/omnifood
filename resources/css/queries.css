@@ -33,6 +33,65 @@
     }
     .city-feature{ font-size:90% ;}
 }
+@media screen and (max-width: 1000px) {
+    .main-nav{ display: none;}
+    .menu-bar{
+        display: block;
+        padding: 5px;
+        /* border: 1px solid #fff; */
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .menu-bar-click{
+        background-color: #fff;
+        height: 3px;
+        width: 27px;
+    }
+    .bar1{
+        width:27px;
+    }
+    .bar2{
+        width:24px;
+    }
+    .bar3{
+        width:22px;
+    }
+    .mobile-menu{
+        position: fixed;
+        top: -1000px;
+        width: 100%;
+        height: 60vh;
+        background-color: #7d8d92;
+        display: flex;
+        justify-content: center;
+        z-index: 900;
+        transition: all .5s ease-in-out;
+    }
+    .active{
+        position: fixed;
+        top: 95px;
+        transition: all .5s ease-in-out;
+    }
+    .mobile-menu li{
+        list-style-type: none;
+    }
+    .mobile-menu ul{
+        width:100%;
+        display: flex;
+        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mobile-menu li a{
+        height: 40px;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width:767px) {
@@ -45,7 +104,6 @@
         width: 100%;
         margin:0 0 4% 0 ;
      }
-    .main-nav{ display: none;}
 
     h1 { font-size:180% ;}
     h2 { font-size:150% ;}
